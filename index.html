@@ -1,0 +1,32 @@
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <title>Scorecard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h3>HOME</h3>
+            <h2 class="score" id="home-score">0</h2>
+            <div>
+                <button id="home-btn-1" onclick="increaseHomeScoreByOne()">+1</button>
+                <button id="home-btn-2" onclick="increaseHomeScoreByTwo()">+2</button>
+                <button id="home-btn-3" onclick="increaseHomeScoreByThree()">+3</button>
+            </div>
+        </div>
+        <div class="column">
+            <h3>GUEST</h3>
+            <h2 class="score" id="guest-score">0</h2>
+            <div>
+                <button id="guest-btn-1" onclick="increaseGuestScoreByOne()">+1</button>
+                <button id="guest-btn-2" onclick="increaseGuestScoreByTwo()">+2</button>
+                <button id="guest-btn-3" onclick="increaseGuestScoreByThree()">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
